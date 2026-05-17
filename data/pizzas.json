@@ -1,0 +1,312 @@
+{
+  "restaurant": {
+    "name": "TRUE pizza",
+    "city": "Дніпро",
+    "currency": "UAH",
+    "phone": ["+38 (063) 874-20-84", "+38 (067) 568-09-09"],
+    "address": "вул. Ярослава Мудрого 68",
+    "website": "https://truepizza.dp.ua",
+    "working_hours": "11:00 — 22:15",
+    "instagram": "https://instagram.com/truepizza_dp"
+  },
+  "pizzas": [
+    {
+      "id": 1,
+      "name": "Мортаделла зі страчателою",
+      "description": "Вершковий соус, мортаделла, моцарела, страчатела, пармезан, фісташки, соус песто, базилік",
+      "weight_g": 640,
+      "price_uah": 580,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2025/05/product_1747808280_291_original-324x324.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Маргарита",
+      "description": "Томатний соус, моцарела розсільна, пармезан, базилік",
+      "weight_g": 530,
+      "price_uah": 395,
+      "tags": ["класика"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2024/03/product_1711182862_15_original-1-324x324.png"
+    },
+    {
+      "id": 3,
+      "name": "Груша з Дорблю",
+      "description": "Вершковий соус, сир дор-блю, груша, сирник, сгущене молоко, мед з горіхами",
+      "weight_g": 550,
+      "price_uah": 380,
+      "tags": ["солодка"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2026/03/product_1771961855_347_original-1-324x324.png"
+    },
+    {
+      "id": 4,
+      "name": "Пепероні зі страчателою",
+      "description": "Томатний соус, пепероні, моцарела, страчатела, гострий перець, пекоріно",
+      "weight_g": 630,
+      "price_uah": 540,
+      "tags": ["гостра"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2025/05/product_1747808428_290_original-324x324.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Крудо з карамелізованими томатами",
+      "description": "Томатний соус, моцарела, прошуто, томати чері карамелізовані, бебі шпинат, рукола, пармезан",
+      "weight_g": 650,
+      "price_uah": 520,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2025/09/product_1757073913_307_original-324x324.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Телятина з персиком",
+      "description": "Вершковий соус, моцарела, телятина, бебі шпинат, рукола, персик консервований, соус хойсін, пекоріно",
+      "weight_g": 630,
+      "price_uah": 550,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2025/09/product_1757273476_308_original-324x324.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "М'ясна BBQ",
+      "description": "Томатний соус, моцарела, наполі, ковбаски мюнхенські, філе куряче, огірок бочковий, перець халапеньо, цибуля марс, соус BBQ, цибуля фрі",
+      "weight_g": 740,
+      "price_uah": 460,
+      "tags": ["гостра"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2025/05/product_1747808730_288_original-324x324.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Корн Амор",
+      "description": "Вершковий соус, моцарела, шинка, кукурудза, шпинат, соус медово-гірчичний, базилік, пармезан",
+      "weight_g": 650,
+      "price_uah": 440,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2025/05/product_1747808616_287_original-324x324.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Пепероні",
+      "description": "Томатний соус, пепероні, моцарела, пармезан",
+      "weight_g": 550,
+      "price_uah": 415,
+      "tags": ["класика", "гостра"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2024/03/product_1711182936_16_original-2-324x324.png"
+    },
+    {
+      "id": 10,
+      "name": "Вершковий лосось",
+      "description": "Вершковий соус, моцарела, перець печений, сир фета, шпинат, базилік, крем-лосось копчений, пекоріно",
+      "weight_g": 610,
+      "price_uah": 520,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2025/05/product_1747808526_289_original-324x324.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Вітелло",
+      "description": "Вершковий соус, моцарела, телятина, соус вітелло, рукола, бебі шпинат, томати черрі, каперси, пармезан",
+      "weight_g": 620,
+      "price_uah": 505,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/10/product_1696879137_103_original-324x324.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Маргарита зі Страчателою",
+      "description": "Томатний соус, страчатела, пармезан, базилік, оливкова олія",
+      "weight_g": 500,
+      "price_uah": 410,
+      "tags": ["класика", "вегетаріанська"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/04/product_1680445704_55_original-324x324.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "З куркою і соусом теріякі",
+      "description": "Соус пілаті, моцарела, куряче філе, перець паприка, цибуля марс, соус теріякі, зелена цибуля, кунжут",
+      "weight_g": 700,
+      "price_uah": 460,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2024/12/product_1733423137_229_original-324x324.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "Малина з сиром Камамбер",
+      "description": "Вершковий соус, малина, камамбер, малиновий джем, м'ята",
+      "weight_g": 530,
+      "price_uah": 420,
+      "tags": ["солодка"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/04/product_1680445950_56_original-324x324.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Мюнхенська",
+      "description": "Вершковий соус з песто, моцарелла, мюнхенські ковбаски, печериці, зелена цибуля, фенхель, соус медово-гірчичний",
+      "weight_g": 650,
+      "price_uah": 420,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2024/02/product_1708266870_176_original-2-324x324.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Мортаделла",
+      "description": "Вершковий соус, мортаделла, моцарела, в'ялені томати, пармезан, фісташки, базилік",
+      "weight_g": 580,
+      "price_uah": 490,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/10/product_1678112019_18_original-324x324.png"
+    },
+    {
+      "id": 17,
+      "name": "Полло",
+      "description": "Вершковий соус, розсільна моцарела, курка, соус песто, томати чері, пармезан, цибуля зелена",
+      "weight_g": 560,
+      "price_uah": 405,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/10/product_1696876984_94_original-324x324.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Неочіз",
+      "description": "Вершковий соус, моцарела, гауда, дор-блю, чедер, пекоріно",
+      "weight_g": 540,
+      "price_uah": 425,
+      "tags": ["вегетаріанська"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2026/03/product_1733423097_88_original-1-324x324.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "4 Сири",
+      "description": "Вершковий соус, моцарела розсільна, горгондзола, рікотта, пармезан, мед, волоський горіх",
+      "weight_g": 540,
+      "price_uah": 410,
+      "tags": ["класика", "вегетаріанська"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/04/product_1680388409_17_original-324x324.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Пепероні Піканте",
+      "description": "Томатний соус, пепероні, моцарела, гострий перець, пармезан, мед, базилік",
+      "weight_g": 600,
+      "price_uah": 420,
+      "tags": ["гостра"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/03/product_1678112592_20_original-324x324.png"
+    },
+    {
+      "id": 21,
+      "name": "Наполі",
+      "description": "Томатний соус, салямі наполі, моцарела, пармезан, базилік",
+      "weight_g": 540,
+      "price_uah": 410,
+      "tags": ["класика"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/04/product_1680383909_23_original-324x324.jpeg"
+    },
+    {
+      "id": 22,
+      "name": "Пепе",
+      "description": "Томатний соус, моцарела, пепероні, бекон, перець маринований, перець халапеньо, пармезан",
+      "weight_g": 640,
+      "price_uah": 440,
+      "tags": ["гостра"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/10/product_1696875589_90_original-324x324.jpeg"
+    },
+    {
+      "id": 23,
+      "name": "Грибна 2.0",
+      "description": "Трюфельний соус, моцарела, печериці, білий гриб, лисички, пармезан, базилік",
+      "weight_g": 530,
+      "price_uah": 360,
+      "tags": ["вегетаріанська"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/10/product_1696875811_89_original-324x324.jpeg"
+    },
+    {
+      "id": 24,
+      "name": "Веро",
+      "description": "Вершковий соус, моцарела, цибуля марс, шинка, салямі пепероні, пармезан, цибуля зелена",
+      "weight_g": 550,
+      "price_uah": 420,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/04/product_1680446980_57_original-324x324.jpeg"
+    },
+    {
+      "id": 25,
+      "name": "Крудо",
+      "description": "Томатний соус, прошуто, моцарела, пармезан, рукола, шпинат, соус песто",
+      "weight_g": 570,
+      "price_uah": 505,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/04/product_1680384449_22_original-324x324.jpeg"
+    },
+    {
+      "id": 26,
+      "name": "Груша з горгондзолою",
+      "description": "Вершковий соус, моцарела, горгондзола, груша",
+      "weight_g": 530,
+      "price_uah": 370,
+      "tags": ["вегетаріанська"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/03/product_1678109129_24_original-324x324.png"
+    },
+    {
+      "id": 27,
+      "name": "Вершкова Шинка",
+      "description": "Соус трюфельний, балик, пармезан, моцарелла, печериці",
+      "weight_g": 560,
+      "price_uah": 415,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/03/product_1678123369_21_original-324x324.png"
+    },
+    {
+      "id": 28,
+      "name": "Цезар",
+      "description": "Вершковий соус, куряче філе, моцарела, томати чері, айсберг, пармезан, соус цезар",
+      "weight_g": 670,
+      "price_uah": 410,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/03/product_1678113374_29_original-324x324.png"
+    },
+    {
+      "id": 29,
+      "name": "З креветкою",
+      "description": "Вершковий соус, моцарела, тигрова креветка, цукіні, томати в'ялені, рукола, соус манговий, креветка сушена",
+      "weight_g": 660,
+      "price_uah": 520,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2024/05/product_1716277510_204_original-1-324x324.jpeg"
+    },
+    {
+      "id": 30,
+      "name": "З Лососем",
+      "description": "Вершковий соус, копчений лосось, крем сир, зелена цибуля",
+      "weight_g": 470,
+      "price_uah": 530,
+      "tags": [],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/05/product_1683227801_28_original-324x324.jpeg"
+    },
+    {
+      "id": 31,
+      "name": "З Нутелою",
+      "description": "Вершковий соус, нутелла, малина, м'ята",
+      "weight_g": 540,
+      "price_uah": 515,
+      "tags": ["десертна"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2026/03/product_1763465268_30_original-1-324x324.jpeg"
+    },
+    {
+      "id": 32,
+      "name": "Apple Pie",
+      "description": "Заварний крем, яблуко, цукор, згущене молоко, волоський горіх, кориця",
+      "weight_g": 430,
+      "price_uah": 305,
+      "tags": ["десертна"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2024/12/product_1733423063_227_original-324x324.jpeg"
+    },
+    {
+      "id": 33,
+      "name": "З лохиною і маскарпоне",
+      "description": "Вершковий соус, лохина, маскарпоне, м'ята",
+      "weight_g": 480,
+      "price_uah": 380,
+      "tags": ["десертна"],
+      "image_url": "https://truepizza.dp.ua/wp-content/uploads/2023/10/product_1696876328_92_original-324x324.jpeg"
+    }
+  ],
+  "note": "Дані та зображення отримані безпосередньо з truepizza.dp.ua. Посилання на зображення — реальні, прямі URL з сайту (WordPress WooCommerce CDN). Актуальні ціни перевіряйте на truepizza.dp.ua."
+}
