@@ -1,12 +1,12 @@
 "use client"
-import Button from "@/components/button";
+import Button from "@/components/shared/button";
 import { Pizza } from "@/lib/pizzas";
 import { useCartStore } from "@/store/cart.store";
-import { DEFAULT_PIZZA_SIZE } from "@/utils/constants";
+import { DEFAULT_PIZZA_SIZE, PizzaSize } from "@/utils/constants";
 
 type Props = {
     pizza: Pizza;
-    size?: number;
+    size?: PizzaSize;
 }
 
 const AddToCartButton = ({ pizza, size = DEFAULT_PIZZA_SIZE }: Props) => {

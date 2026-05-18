@@ -1,9 +1,8 @@
 import { Pizza } from "@/lib/pizzas";
 import Image from "next/image";
-import Button from "@/components/button";
 import Link from "next/link";
-import PizzaTags from "@/components/pizza-tags";
-import AddToCartButton from "./add-to-cart-button";
+import PizzaTags from "@/components/pizza-card/pizza-tags";
+import AddToCartButton from "@/components/pizza-card/add-to-cart-button";
 
 const PizzaListitem = ({ pizza }: { pizza: Pizza }) => {
     return (

@@ -10,6 +10,12 @@ export async function getPizzaById(id: number): Promise<Pizza | null> {
   return data.pizzas.find((pizza) => pizza.id === id) || null;
 }
 
+// get 6 pizzas with lowest prices for carousel
+export async function getPizzasForCarousel(): Promise<Pizza[]> {
+  const data = await getPizzas();
+  return data.pizzas.sort((a, b) => a.price_uah - b.price_uah).slice(0, 10);
+}
+
 export interface Restaurant {
   name: string;
   city: string;

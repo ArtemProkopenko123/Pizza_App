@@ -1,19 +1,20 @@
 import { Pizza } from "@/lib/pizzas";
 import { create } from "zustand";
+import { PIZZA_SIZE_MULTIPLIER, PizzaSize } from "@/utils/constants";
 
 type CartItem = {
   id: number;
   name: string;
   price: number;
-  size: number;
+  size: PizzaSize;
   quantity: number;
 };
 
 type CartStore = {
   items: CartItem[];
-  addItem: (pizza: Pizza, size: number) => void;
-  removeItem: (id: number, size: number) => void;
-  updateQuantity: (id: number, size: number, quantity: number) => void;
+  addItem: (pizza: Pizza, size: PizzaSize) => void;
+  removeItem: (id: number, size: PizzaSize) => void;
+  updateQuantity: (id: number, size: PizzaSize, quantity: number) => void;
   clearCart: () => void;
   totalItems: () => number;
   totalPrice: () => number;
@@ -36,7 +37,7 @@ export const useCartStore = create<CartStore>((set, get) => ({
         items: [...state.items, {
           id: pizza.id,
           name: pizza.name,
-          price: pizza.price_uah,
+          price: Math.round(pizza.price_uah * PIZZA_SIZE_MULTIPLIER[size]),
           size,
           quantity: 1,
         }],
@@ -44,13 +45,13 @@ export const useCartStore = create<CartStore>((set, get) => ({
     });
   },
 
-  removeItem: (id, size) => {
+  removeItem: (id, size: PizzaSize) => {
     set((state) => ({
       items: state.items.filter(i => !(i.id === id && i.size === size)),
     }));
   },
 
-  updateQuantity: (id, size, quantity) => {
+  updateQuantity: (id, size: PizzaSize, quantity) => {
     set((state) => ({
       items: state.items.map(i =>
         i.id === id && i.size === size ? { ...i, quantity } : i
