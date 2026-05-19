@@ -1,6 +1,6 @@
 "use client"
 
-import { PizzaType } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/types";
 import PizzaCarouselItem from "./pizza-carousel-item";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useRef } from "react";

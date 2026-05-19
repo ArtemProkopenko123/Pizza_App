@@ -1,4 +1,4 @@
-import { PizzaType } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/types";
 import Image from "next/image";
 import Link from "next/link";
 import PizzaTags from "@/components/pizza-card/pizza-tags";

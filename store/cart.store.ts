@@ -1,4 +1,4 @@
-import { PizzaType } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/types";
 import { create } from "zustand";
 import { PIZZA_SIZE_MULTIPLIER, PIZZA_WEIGHT_MULTIPLIER, PizzaSize } from "@/utils/constants";
 import { createJSONStorage, persist } from 'zustand/middleware'

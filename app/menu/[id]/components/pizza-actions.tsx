@@ -1,5 +1,5 @@
 "use client"
-import { PizzaType } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/types";
 import AddToCartButton from "@/components/pizza-card/add-to-cart-button";
 import SizeSelect from "./size-select";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 "use client"
-import { PizzaType } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/types";
 import Image from "next/image";
 import { IMAGE_HEIGHT, IMAGE_WIDTH } from "./contants";
 import { useCallback } from "react";

@@ -1,6 +1,6 @@
 "use client"
 import Button from "@/components/shared/button";
-import { PizzaType } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/types";
 import { useCartStore } from "@/store/cart.store";
 import { DEFAULT_PIZZA_SIZE, PizzaSize } from "@/utils/constants";
 import { Plus } from "lucide-react";
