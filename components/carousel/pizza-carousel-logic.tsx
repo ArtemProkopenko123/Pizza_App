@@ -1,13 +1,13 @@
 "use client"
 
-import { Pizza } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/pizzas";
 import PizzaCarouselItem from "./pizza-carousel-item";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useRef } from "react";
 import { IMAGE_WIDTH, SCROLL_INTERVAL, SCROLL_OFFSET } from "./contants";
 
 type Props = {
-    pizzas: Pizza[];
+    pizzas: PizzaType[];
 }
 const PizzaCarouselLogic = ({ pizzas }: Props) => {
     const scrollRef = useRef<HTMLDivElement>(null);

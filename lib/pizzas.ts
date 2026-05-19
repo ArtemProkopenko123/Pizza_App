@@ -1,22 +1,22 @@
 import pizzas from "@/data/pizzas.json";
 
-export async function getPizzas(): Promise<PizzasData> {
+export async function getPizzas(): Promise<PizzasDataType> {
   await new Promise(resolve => setTimeout(resolve, 300));
   return pizzas;
 }
 
-export async function getPizzaById(id: number): Promise<Pizza | null> {
+export async function getPizzaById(id: number): Promise<PizzaType | null> {
   const data = await getPizzas();
   return data.pizzas.find((pizza) => pizza.id === id) || null;
 }
 
 // get 6 pizzas with lowest prices for carousel
-export async function getPizzasForCarousel(): Promise<Pizza[]> {
+export async function getPizzasForCarousel(): Promise<PizzaType[]> {
   const data = await getPizzas();
   return data.pizzas.sort((a, b) => a.price_uah - b.price_uah).slice(0, 10);
 }
 
-export interface Restaurant {
+export interface RestaurantType {
   name: string;
   city: string;
   currency: string;
@@ -27,7 +27,7 @@ export interface Restaurant {
   instagram: string;
 }
 
-export interface Pizza {
+export interface PizzaType {
   id: number;
   name: string;
   description: string;
@@ -37,8 +37,8 @@ export interface Pizza {
   image_url: string;
 }
 
-export interface PizzasData {
-  restaurant: Restaurant;
-  pizzas: Pizza[];
+export interface PizzasDataType {
+  restaurant: RestaurantType;
+  pizzas: PizzaType[];
   note: string;
 }

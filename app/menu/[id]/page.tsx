@@ -18,7 +18,6 @@ export default async function PizzaPage({ params }: { params: { id: string } }) 
             <Image src={pizza.image_url} alt={pizza.name} width={300} height={300} className="mx-auto sm:w-full sm:h-full object-cover" loading='eager' />
             <div className="flex flex-col gap-3">
                 <h1 className="text-2xl font-bold">{pizza.name}</h1>
-                <p className="text-2xl text-gray-500">{pizza.weight_g} г</p>
                 <PizzaTags tags={pizza.tags} />
                 <p>{pizza.description}</p>
                 <PizzaActions pizza={pizza} />

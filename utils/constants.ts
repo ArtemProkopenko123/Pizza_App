@@ -11,3 +11,9 @@ export const PIZZA_SIZE_MULTIPLIER: Record<PizzaSize, number> = {
     [PizzaSize.MEDIUM]: 1.0,
     [PizzaSize.LARGE]: 1.3,
 };
+
+export const PIZZA_WEIGHT_MULTIPLIER: Record<PizzaSize, number> = {
+    [PizzaSize.SMALL]: 0.8,
+    [PizzaSize.MEDIUM]: 1.0,
+    [PizzaSize.LARGE]: 1.3,
+};

@@ -1,18 +1,16 @@
-import { Pizza } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/pizzas";
 import { create } from "zustand";
-import { PIZZA_SIZE_MULTIPLIER, PizzaSize } from "@/utils/constants";
+import { PIZZA_SIZE_MULTIPLIER, PIZZA_WEIGHT_MULTIPLIER, PizzaSize } from "@/utils/constants";
+import { createJSONStorage, persist } from 'zustand/middleware'
 
-type CartItem = {
-  id: number;
-  name: string;
-  price: number;
+export type CartItemType = Omit<PizzaType, "tags" | "description"> & {
   size: PizzaSize;
   quantity: number;
 };
 
 type CartStore = {
-  items: CartItem[];
-  addItem: (pizza: Pizza, size: PizzaSize) => void;
+  items: CartItemType[];
+  addItem: (pizza: PizzaType, size: PizzaSize) => void;
   removeItem: (id: number, size: PizzaSize) => void;
   updateQuantity: (id: number, size: PizzaSize, quantity: number) => void;
   clearCart: () => void;
@@ -20,7 +18,7 @@ type CartStore = {
   totalPrice: () => number;
 };
 
-export const useCartStore = create<CartStore>((set, get) => ({
+export const useCartStore = create<CartStore>()(persist((set, get) => ({
   items: [],
 
   addItem: (pizza, size) => {
@@ -35,23 +33,25 @@ export const useCartStore = create<CartStore>((set, get) => ({
       }
       return {
         items: [...state.items, {
-          id: pizza.id,
-          name: pizza.name,
-          price: Math.round(pizza.price_uah * PIZZA_SIZE_MULTIPLIER[size]),
+          ...pizza,
           size,
           quantity: 1,
+          price_uah: Math.round(pizza.price_uah * PIZZA_SIZE_MULTIPLIER[size]),
+          weight_g: Math.round(pizza.weight_g * PIZZA_WEIGHT_MULTIPLIER[size]),
         }],
       };
     });
   },
 
-  removeItem: (id, size: PizzaSize) => {
+  removeItem: (id, size) => {
     set((state) => ({
       items: state.items.filter(i => !(i.id === id && i.size === size)),
     }));
   },
 
-  updateQuantity: (id, size: PizzaSize, quantity) => {
+  updateQuantity: (id, size, quantity) => {
+    const item = get().items.find(i => i.id === id && i.size === size);
+    if (!item) return;
     set((state) => ({
       items: state.items.map(i =>
         i.id === id && i.size === size ? { ...i, quantity } : i
@@ -63,5 +63,8 @@ export const useCartStore = create<CartStore>((set, get) => ({
 
   totalItems: () => get().items.reduce((acc, i) => acc + i.quantity, 0),
 
-  totalPrice: () => get().items.reduce((acc, i) => acc + i.price * i.quantity, 0),
+  totalPrice: () => get().items.reduce((acc, i) => acc + i.price_uah * i.quantity, 0),
+}), {
+  name: 'cart',
+  storage: createJSONStorage(() => localStorage),
 }));

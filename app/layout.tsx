@@ -43,8 +43,7 @@ export default function RootLayout({
             <div className="flex items-center text-white">
               <span className="font-semibold text-xl tracking-tight mr-2" >🍕 PizzaFast</span>
               <div>
-                <NavItem href="/" text="Home" />
-                <NavItem href="/menu" text="Menu" />
+                <NavItem href="/" text="Menu" />
                 <NavItem href="/contact" text="Contact" />
               </div>
             </div>

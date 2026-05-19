@@ -1,10 +1,10 @@
-import { Pizza } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/pizzas";
 import Image from "next/image";
 import Link from "next/link";
 import PizzaTags from "@/components/pizza-card/pizza-tags";
 import AddToCartButton from "@/components/pizza-card/add-to-cart-button";
 
-const PizzaListitem = ({ pizza }: { pizza: Pizza }) => {
+const PizzaListitem = ({ pizza }: { pizza: PizzaType }) => {
     return (
         <article className='grid grid-cols-[200px_1fr] md:grid-cols-[200px_1fr] border-2 border-gray-100 rounded-md'>
             <Image

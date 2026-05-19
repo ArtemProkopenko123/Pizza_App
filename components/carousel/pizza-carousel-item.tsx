@@ -1,11 +1,11 @@
 "use client"
-import { Pizza } from "@/lib/pizzas";
+import { PizzaType } from "@/lib/pizzas";
 import Image from "next/image";
 import { IMAGE_HEIGHT, IMAGE_WIDTH } from "./contants";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 
-const PizzaCarouselItem = ({ pizza }: { pizza: Pizza }) => {
+const PizzaCarouselItem = ({ pizza }: { pizza: PizzaType }) => {
     const router = useRouter();
     const onClick = useCallback(() => {
         router.push(`/menu/${pizza.id}`);
