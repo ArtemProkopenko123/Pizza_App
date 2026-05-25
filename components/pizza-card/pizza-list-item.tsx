@@ -23,7 +23,7 @@ const PizzaListitem = ({ pizza }: { pizza: PizzaType }) => {
                 </div>
                 <p className='text-sm text-gray-500 my-3 flex-1 line-clamp-2'>{pizza.description}</p>
                 <div className="flex justify-between items-center mt-auto">
-                    <p className='text-xl font-bold'>{pizza.price_uah} грн</p>
+                    <p className='text-xl font-bold'>{pizza.price_uah} UAH</p>
                     <AddToCartButton pizza={pizza} />
                 </div>
             </div>

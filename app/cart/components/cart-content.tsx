@@ -25,7 +25,7 @@ const CartContent = () => {
                 <span className="text-2xl font-bold">Total items:</span>
                 <span className="text-2xl font-bold text-right">{totalItems()}</span>
                 <span className="text-2xl font-bold">Total price:</span>
-                <span className="text-2xl font-bold text-right">{totalPrice()} грн</span>
+                <span className="text-2xl font-bold text-right">{totalPrice()} UAH</span>
             </div>
             <Button className="w-full h-10" onClick={handleCheckout}>Checkout</Button>
         </div>

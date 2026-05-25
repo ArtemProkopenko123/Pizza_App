@@ -8,7 +8,7 @@ type Props = {
 const PizzaWeight = ({ weight, size }: Props) => {
     const calculatedWeight = usePizzaWeight(weight, size);
     return (
-        <p className="text-2xl text-gray-500">{calculatedWeight} г</p>
+        <p className="text-2xl text-gray-500">{calculatedWeight} g</p>
     )
 }
 

@@ -25,3 +25,12 @@ export interface RestaurantType {
     pizzas: PizzaType[];
     note: string;
   }
+
+  export interface PizzaTagType {
+    id: number;
+    name: string;
+  };
+
+  export interface PizzasTagsDataType {
+    tags: PizzaTagType[];
+  }

@@ -10,7 +10,7 @@ import { DeliveryType, PaymentType } from "../helpers/contants";
 import TextInput from "@/components/shared/text-input";
 import TextArea from "@/components/shared/text-area";
 import SelectField from "@/components/shared/select-field";
-import { Banknote, Check, MapPin, MessageCircleMore, PackageCheck, Phone } from "lucide-react";
+import { Banknote, Check, Mail, MapPin, MessageCircleMore, PackageCheck, Phone } from "lucide-react";
 import FormIcon from "./form-icon";
 
 
@@ -52,6 +52,10 @@ const CheckoutForm = ({ onSuccess, onError }: Props) => {
 
                     <TextInput.Field label={<><FormIcon Icon={Phone} /> Phone</>} required error={errors.phone?.message}>
                         <TextInput variant="filled" {...register("phone")} type="text" placeholder="Phone" />
+                    </TextInput.Field>
+
+                    <TextInput.Field label={<><FormIcon Icon={Mail} /> Email</>} required error={errors.email?.message}>
+                        <TextInput variant="filled" {...register("email")} type="email" placeholder="Email" />
                     </TextInput.Field>
 
                     <TextInput.Field label={<><FormIcon Icon={MapPin} /> Address</>} required error={errors.address?.message}>

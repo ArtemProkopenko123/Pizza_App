@@ -16,7 +16,7 @@ const PizzaActions = ({ pizza }: { pizza: PizzaType }) => {
             <PizzaWeight weight={pizza.weight_g} size={size} />
             <SizeSelect inline currentSize={size} setSize={setSize} />
             <div className="flex items-center gap-4">
-                <p className="text-2xl font-bold">{price} грн</p>
+                <p className="text-2xl font-bold">{price} UAH</p>
                 <AddToCartButton pizza={pizza} size={size} />
             </div>
 

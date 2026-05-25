@@ -31,7 +31,7 @@ const SizeOption = ({ size, currentSize, setSize }: SizeOptionProps) => {
     return (
         <div>
             <input onChange={() => setSize(size)} className="cursor-pointer" type="radio" name="size" value={size} id={`size${size}`} checked={currentSize === size} />
-            <label htmlFor={`size${size}`} className="ml-2 cursor-pointer">{size} см</label>
+            <label htmlFor={`size${size}`} className="ml-2 cursor-pointer">{size} cm</label>
         </div>
     )
 }

@@ -6,7 +6,7 @@ export async function submitOrder(data: {
     address: string;
     comment?: string;
 }) {
-    // имитация отправки на бэкенд
+    // simulate backend submission
     await new Promise(resolve => setTimeout(resolve, 1000));
     console.log("Order received:", data);
     return { success: true };

@@ -5,7 +5,11 @@ import BackButton from "@/components/shared/back-button";
 import PizzaTags from "@/components/pizza-card/pizza-tags";
 import PizzaActions from "./components/pizza-actions";
 
-export default async function PizzaPage({ params }: { params: { id: string } }) {
+type PizzaPageProps = {
+    params: Promise<{ id: string }>
+}
+
+export default async function PizzaPage({ params }: PizzaPageProps) {
     const { id } = await params;
     const pizza = await getPizzaById(parseInt(id));
 

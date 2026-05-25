@@ -1,0 +1,20 @@
+{
+    "tags": [
+        {
+            "id": 1,
+            "name": "classic"
+        },
+        {
+            "id": 2,
+            "name": "sweet"
+        },
+        {
+            "id": 3,
+            "name": "dessert"
+        },
+        {
+            "id": 4,
+            "name": "vegetarian"
+        }
+    ]
+}

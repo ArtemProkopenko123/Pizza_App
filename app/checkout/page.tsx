@@ -5,6 +5,7 @@ import Modal from "@/components/shared/modal";
 import Button from "@/components/shared/button";
 import { useRouter } from "next/navigation";
 import { useCartStore } from "@/store/cart.store";
+
 const CheckoutPage = () => {
     const clearCart = useCartStore(state => state.clearCart);
     const router = useRouter();
@@ -24,7 +25,7 @@ const CheckoutPage = () => {
     }
     return (
         <div>
-            <h1>Checkout</h1>
+            <h1 className="text-2xl font-bold text-center">Checkout</h1>
             <CheckoutForm onSuccess={handleSuccess} onError={handleError} />
             <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
                 <Modal.Header>
